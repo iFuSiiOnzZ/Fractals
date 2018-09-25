@@ -161,6 +161,7 @@
     <ClCompile Include="SourceCode\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="SourceCode\fractals\mandelbrot.h" />
     <ClInclude Include="SourceCode\fractals\julia.h" />
     <ClInclude Include="SourceCode\graphics\graphics.h" />
   </ItemGroup>

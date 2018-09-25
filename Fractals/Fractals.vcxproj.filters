@@ -29,5 +29,8 @@
     <ClInclude Include="SourceCode\fractals\julia.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SourceCode\fractals\mandelbrot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
