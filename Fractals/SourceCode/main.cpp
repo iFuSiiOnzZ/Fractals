@@ -2,8 +2,9 @@
 /*
     Project includes
 */
-
 #include "graphics\graphics.h"
+
+#include "fractals\mandelbrot.h"
 #include "fractals\julia.h"
 
 /*
@@ -317,7 +318,8 @@ int WINAPI WinMain(HINSTANCE hActualInst, HINSTANCE hPrevInst, LPSTR cmdLine, in
         DrawBuffer.Width = GlobalBackBuffer.Width;
         DrawBuffer.Pitch = GlobalBackBuffer.Pitch;
 
-        DrawJulia<float>(&GraphicsManager, &DrawBuffer, WndDimensions.Width, WndDimensions.Height, z, cRe, cIm, x, y);
+        //DrawJulia<float>(&GraphicsManager, &DrawBuffer, WndDimensions.Width, WndDimensions.Height, z, cRe, cIm, x, y);
+        DrawMandelbrot<float>(&GraphicsManager, &DrawBuffer, WndDimensions.Width, WndDimensions.Height);
         DisplayBuffer(&GlobalBackBuffer, DeviceContext, WndDimensions.Width, WndDimensions.Height);
         last_frame_time = current_frame_time;
     }
